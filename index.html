@@ -20,24 +20,56 @@
       justify-content: center;
       font-family: sans-serif;
       color: white;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     }
-    .overlay {
+    .content {
       text-align: center;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.4);
-      border-radius: 10px;
+      max-width: 90%;
+    }
+    .top-text {
+      font-size: 16px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
+    }
+    .image-container {
+      margin-bottom: 20px;
+    }
+    .footer-text {
+      font-size: 12px;
+      position: absolute;
+      bottom: 10px;
+      text-align: center;
+      width: 100%;
+      color: white;
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
     }
   </style>
 </head>
 <body 
-  style="
-   background-image: url('background.jpg');
-  "
->
-  <div class="overlay">
-    <h1>Text Here</h1>
-    <p>Optional description or leave empty</p>
+  style="background-image: url('background.jpg');">
+  <div class="content">
+    <!-- Text with shadow -->
+    <div class="top-text">
+      detailed stock analysis for making trades on the stock exchange on your desk within 6 months<br>
+      enter your email, click the button - scan the QR code or copy the payment address.<br>
+      Good luck in trading
+    </div>
+
+    <!-- Image -->
+    <div class="image-container">
+      <img src="list.jpg" alt="Product Preview" width="200">
+    </div>
+
+    <!-- Button Blockonomics -->
+    <a href="" class="blockoPayBtn" data-toggle="modal" data-uid="02dc75abeda54e53">
+      <img width="160" src="https://www.blockonomics.co/img/pay_with_bitcoin_medium.png">
+    </a>
   </div>
+
+  <!-- Bottom text -->
+  <div class="footer-text">
+    the product cannot be exchanged or returned.
+  </div>
+
+  <script src="https://www.blockonomics.co/js/pay_button.js"></script>
 </body>
 </html>
